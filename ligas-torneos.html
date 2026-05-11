@@ -1,334 +1,343 @@
 <!DOCTYPE html>
-
 <html class="dark" lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>7Pádel - Ligas y Torneos</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "tertiary": "#55d5fd",
-                        "surface-bright": "#363a3e",
-                        "secondary-fixed-dim": "#a4d64c",
-                        "on-primary-container": "#80bea6",
-                        "on-error-container": "#ffdad6",
-                        "inverse-primary": "#2b6954",
-                        "secondary-container": "#719e13",
-                        "on-secondary-fixed-variant": "#354e00",
-                        "inverse-on-surface": "#2d3135",
-                        "secondary": "#a4d64c",
-                        "outline": "#89938d",
-                        "on-primary-fixed": "#002117",
-                        "on-surface-variant": "#bfc9c3",
-                        "tertiary-fixed-dim": "#55d5fd",
-                        "surface-container-high": "#262a2e",
-                        "background": "#101418",
-                        "on-tertiary-fixed": "#001f28",
-                        "on-error": "#690005",
-                        "secondary-fixed": "#bff365",
-                        "surface-tint": "#95d3ba",
-                        "on-surface": "#e0e3e8",
-                        "surface-container": "#1c2024",
-                        "surface-container-lowest": "#0b0f12",
-                        "surface-container-low": "#181c20",
-                        "surface-variant": "#313539",
-                        "primary-container": "#064e3b",
-                        "error": "#ffb4ab",
-                        "on-secondary": "#233600",
-                        "surface": "#101418",
-                        "surface-dim": "#101418",
-                        "primary-fixed": "#b0f0d6",
-                        "on-secondary-container": "#1e2f00",
-                        "primary": "#95d3ba",
-                        "on-primary-fixed-variant": "#0b513d",
-                        "surface-container-highest": "#313539",
-                        "on-tertiary-container": "#38c0e7",
-                        "on-tertiary": "#003543",
-                        "error-container": "#93000a",
-                        "tertiary-container": "#004b5d",
-                        "outline-variant": "#404944",
-                        "tertiary-fixed": "#b6eaff",
-                        "on-primary": "#003829",
-                        "on-tertiary-fixed-variant": "#004e60",
-                        "inverse-surface": "#e0e3e8",
-                        "on-secondary-fixed": "#131f00",
-                        "primary-fixed-dim": "#95d3ba",
-                        "on-background": "#e0e3e8"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "md": "24px",
-                        "xs": "4px",
-                        "margin": "32px",
-                        "xl": "80px",
-                        "sm": "12px",
-                        "gutter": "24px",
-                        "base": "8px",
-                        "lg": "48px"
-                    },
-                    "fontFamily": {
-                        "display-lg": ["Anybody"],
-                        "body-lg": ["Inter"],
-                        "body-md": ["Inter"],
-                        "headline-md": ["Anybody"],
-                        "headline-lg-mobile": ["Anybody"],
-                        "headline-lg": ["Anybody"],
-                        "label-md": ["Inter"]
-                    },
-                    "fontSize": {
-                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
-                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
-                        "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }]
-                    }
-                }
-            }
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary": "#55d5fd",
+          "surface-bright": "#363a3e",
+          "secondary-fixed-dim": "#a4d64c",
+          "on-primary-container": "#80bea6",
+          "on-error-container": "#ffdad6",
+          "inverse-primary": "#2b6954",
+          "secondary-container": "#719e13",
+          "on-secondary-fixed-variant": "#354e00",
+          "inverse-on-surface": "#2d3135",
+          "secondary": "#a4d64c",
+          "outline": "#89938d",
+          "on-primary-fixed": "#002117",
+          "on-surface-variant": "#bfc9c3",
+          "tertiary-fixed-dim": "#55d5fd",
+          "surface-container-high": "#262a2e",
+          "background": "#101418",
+          "on-tertiary-fixed": "#001f28",
+          "on-error": "#690005",
+          "secondary-fixed": "#bff365",
+          "surface-tint": "#95d3ba",
+          "on-surface": "#e0e3e8",
+          "surface-container": "#1c2024",
+          "surface-container-lowest": "#0b0f12",
+          "surface-container-low": "#181c20",
+          "surface-variant": "#313539",
+          "primary-container": "#064e3b",
+          "error": "#ffb4ab",
+          "on-secondary": "#233600",
+          "surface": "#101418",
+          "surface-dim": "#101418",
+          "primary-fixed": "#b0f0d6",
+          "on-secondary-container": "#1e2f00",
+          "primary": "#95d3ba",
+          "on-primary-fixed-variant": "#0b513d",
+          "surface-container-highest": "#313539",
+          "on-tertiary-container": "#38c0e7",
+          "on-tertiary": "#003543",
+          "error-container": "#93000a",
+          "tertiary-container": "#004b5d",
+          "outline-variant": "#404944",
+          "tertiary-fixed": "#b6eaff",
+          "on-primary": "#003829",
+          "on-tertiary-fixed-variant": "#004e60",
+          "inverse-surface": "#e0e3e8",
+          "on-secondary-fixed": "#131f00",
+          "primary-fixed-dim": "#95d3ba",
+          "on-background": "#e0e3e8"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "md": "24px",
+          "xs": "4px",
+          "margin": "32px",
+          "xl": "80px",
+          "sm": "12px",
+          "gutter": "24px",
+          "base": "8px",
+          "lg": "48px"
+        },
+        "fontFamily": {
+          "display-lg": ["Anybody"],
+          "body-lg": ["Inter"],
+          "body-md": ["Inter"],
+          "headline-md": ["Anybody"],
+          "headline-lg-mobile": ["Anybody"],
+          "headline-lg": ["Anybody"],
+          "label-md": ["Inter"]
+        },
+        "fontSize": {
+          "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+          "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+          "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+          "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+          "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+          "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+          "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }]
         }
-    </script>
-<style>
-        .masonry-grid {
-            column-count: 1;
-            column-gap: 24px;
-        }
-        @media (min-width: 768px) {
-            .masonry-grid { column-count: 2; }
-        }
-        @media (min-width: 1024px) {
-            .masonry-grid { column-count: 3; }
-        }
-        .masonry-item {
-            break-inside: avoid;
-            margin-bottom: 24px;
-        }
-    </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
+      }
     }
-  </style>
-  </head>
+  }
+</script>
+<style>
+  body { min-height: 100dvh; }
+  .masonry-grid { column-count: 1; column-gap: 24px; }
+  @media (min-width: 640px) { .masonry-grid { column-count: 2; } }
+  @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+  .masonry-item { break-inside: avoid; margin-bottom: 24px; }
+</style>
+</head>
 <body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
-<!-- TopAppBar (Hidden on mobile, flex on desktop) -->
-<header class="hidden md:flex fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md">
-<div class="flex justify-between items-center px-margin py-base max-w-[1200px] mx-auto w-full">
-<a href="index.html" class="flex items-center gap-base hover:bg-secondary/10 p-2 rounded transition-colors">
-<span class="material-symbols-outlined text-secondary text-display-lg" style="font-variation-settings: 'FILL' 1;">sports_tennis</span>
-<span class="font-display-lg text-headline-md text-on-surface uppercase tracking-tighter">7Pádel</span>
-</a>
-<nav class="flex gap-gutter">
-<a class="text-on-surface hover:text-secondary transition-colors font-label-md text-label-md" href="index.html">Inicio</a>
-<a class="text-on-surface hover:text-secondary transition-colors font-label-md text-label-md" href="academia.html">Academia</a>
-<a class="text-on-surface hover:text-secondary transition-colors font-label-md text-label-md" href="instalaciones.html">Instalaciones</a>
-<a class="text-secondary font-bold border-b-2 border-secondary font-label-md text-label-md" href="ligas-torneos.html">Ligas &amp; Torneos</a>
-</nav>
-<a href="index.html#reservar" class="bg-secondary text-on-secondary px-gutter py-sm rounded-full font-label-md text-label-md uppercase hover:bg-secondary/90 transition-colors">
-                RESERVAR
-            </a>
-</div>
+
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-outline-variant">
+  <div class="flex justify-between items-center px-4 md:px-margin py-base max-w-[1200px] mx-auto w-full">
+    <a href="index.html" class="flex items-center gap-sm hover:bg-secondary/10 p-2 rounded transition-colors">
+      <span class="material-symbols-outlined text-secondary text-headline-md" style="font-variation-settings: 'FILL' 1;">sports_tennis</span>
+      <span class="font-display-lg text-headline-md text-on-surface uppercase tracking-tighter">7Pádel</span>
+    </a>
+    <nav class="hidden md:flex gap-gutter items-center">
+      <a class="text-on-surface hover:text-secondary transition-colors font-label-md text-label-md" href="index.html">Inicio</a>
+      <a class="text-on-surface hover:text-secondary transition-colors font-label-md text-label-md" href="academia.html">Academia</a>
+      <a class="text-on-surface hover:text-secondary transition-colors font-label-md text-label-md" href="instalaciones.html">Instalaciones</a>
+      <a class="text-secondary font-bold border-b-2 border-secondary font-label-md text-label-md" href="ligas-torneos.html">Ligas &amp; Torneos</a>
+    </nav>
+    <div class="flex items-center gap-sm">
+      <a href="index.html#reservar" class="hidden md:flex bg-secondary text-on-secondary px-gutter py-sm rounded-full font-label-md text-label-md uppercase hover:bg-secondary/90 transition-colors items-center">
+        RESERVAR
+      </a>
+      <button id="menu-toggle" class="md:hidden p-2 text-on-surface hover:text-secondary transition-colors" aria-label="Abrir menú">
+        <span class="material-symbols-outlined text-[28px]" id="menu-icon">menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" class="hidden md:hidden flex-col bg-background border-t border-outline-variant px-4 py-md gap-base">
+    <a class="font-label-md text-label-md text-on-surface hover:text-secondary uppercase py-sm border-b border-outline-variant transition-colors" href="index.html">Inicio</a>
+    <a class="font-label-md text-label-md text-on-surface hover:text-secondary uppercase py-sm border-b border-outline-variant transition-colors" href="academia.html">Academia</a>
+    <a class="font-label-md text-label-md text-on-surface hover:text-secondary uppercase py-sm border-b border-outline-variant transition-colors" href="instalaciones.html">Instalaciones</a>
+    <a class="font-label-md text-label-md text-secondary font-bold uppercase py-sm border-b border-outline-variant" href="ligas-torneos.html">Ligas &amp; Torneos</a>
+    <a href="index.html#reservar" class="mt-sm bg-secondary text-on-secondary font-label-md text-label-md px-gutter py-sm rounded-full uppercase text-center">RESERVAR</a>
+  </nav>
 </header>
-<!-- Mobile Top Bar (Simplified) -->
-<header class="md:hidden flex justify-between items-center px-margin py-base bg-background/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant">
-<a href="index.html" class="font-display-lg text-headline-md text-on-surface uppercase tracking-tighter">7Pádel</a>
-<span class="material-symbols-outlined text-secondary">menu</span>
-</header>
-<main class="flex-grow pt-xl pb-xl">
-<!-- Hero Section -->
-<section class="relative w-full h-[530px] min-h-[500px] flex items-center justify-center overflow-hidden mb-xl">
-<div class="absolute inset-0 z-0">
-<img alt="Padel Action" class="w-full h-full object-cover" data-alt="A dynamic action shot of a professional padel match taking place on a sleek, dark-toned indoor court. The lighting is dramatic and moody, focusing intensely on a player executing a powerful smash. The scene heavily features deep blacks, dark greens, and striking lime green accents on the rackets and court lines. The overall aesthetic is high-contrast, premium, and intensely competitive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmSmOsg-JYyJyZlqSIcDIoDDJSFOZ1-hlS8FNPS6FvVUwPNI300R7kMPmqtVELTPMwM13J-oI1lD5_0mem_BuEX1vW7WP8nDRQmR10JCZjqCgXaoYvINE5opZXztaOZGKGIaBBVssyhnab35dx5X4Wq1yupzJ3RWCrh89Fh_tIrOENgPltBnzRREWrW0CfsPMfGUE6Wg4EJp5PN_rpwXwzFNC6C8QO1w18ZKt4QqiH41Kjc2cZy1VAgyUVZB1Mm067UVUxki1OYbE"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
-</div>
-<div class="relative z-10 text-center px-margin max-w-[800px]">
-<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface mb-md">Compite. Mejora. Gana.</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-margin">Únete a nuestras ligas y torneos. Diseñados para todos los niveles, en las mejores instalaciones de Valencia.</p>
-<div class="flex flex-col sm:flex-row gap-base justify-center">
-<button class="bg-secondary text-on-secondary px-lg py-sm rounded-full font-label-md text-label-md uppercase hover:bg-secondary/90 transition-colors">Ver Calendario</button>
-<button class="border border-on-surface text-on-surface px-lg py-sm rounded-full font-label-md text-label-md uppercase hover:bg-on-surface/10 transition-colors">Reglas</button>
-</div>
-</div>
-</section>
-<!-- Categories Bento Grid -->
-<section class="max-w-[1200px] mx-auto px-margin mb-xl">
-<div class="flex items-center gap-sm mb-lg">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">category</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Categorías de Competición</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Iniciación -->
-<div class="bg-surface-container-high p-lg group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
-<div class="absolute top-0 right-0 p-base">
-<span class="material-symbols-outlined text-outline-variant text-display-lg opacity-20">looks_one</span>
-</div>
-<div class="relative z-10">
-<span class="bg-tertiary text-on-tertiary px-sm py-xs rounded-full font-label-md text-[10px] uppercase mb-sm inline-block">Nivel 1-3</span>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Iniciación</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-margin">Perfecto para dar tus primeros pasos competitivos. Ambiente relajado y formativo.</p>
-<a class="text-secondary font-label-md text-label-md uppercase hover:underline flex items-center gap-xs" href="#">
-                            Ver Ligas <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
-</div>
-</div>
-<!-- Intermedio -->
-<div class="bg-surface-container-high p-lg group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
-<div class="absolute top-0 right-0 p-base">
-<span class="material-symbols-outlined text-outline-variant text-display-lg opacity-20">looks_two</span>
-</div>
-<div class="relative z-10">
-<span class="bg-primary text-on-primary px-sm py-xs rounded-full font-label-md text-[10px] uppercase mb-sm inline-block">Nivel 3-4.5</span>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Intermedio</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-margin">Competición regular para jugadores asentados. Mejora tu ranking local.</p>
-<a class="text-secondary font-label-md text-label-md uppercase hover:underline flex items-center gap-xs" href="#">
-                            Ver Ligas <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
-</div>
-</div>
-<!-- Avanzado -->
-<div class="bg-surface-container-high p-lg group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden border border-secondary/20">
-<div class="absolute top-0 right-0 p-base">
-<span class="material-symbols-outlined text-secondary text-display-lg opacity-20">looks_3</span>
-</div>
-<div class="relative z-10">
-<span class="bg-secondary text-on-secondary px-sm py-xs rounded-full font-label-md text-[10px] uppercase mb-sm inline-block">Nivel 4.5+</span>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Avanzado</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-margin">Alta intensidad. Enfréntate a los mejores del club por premios en metálico.</p>
-<a class="text-secondary font-label-md text-label-md uppercase hover:underline flex items-center gap-xs" href="#">
-                            Ver Ligas <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Featured Tournament Banner -->
-<section class="max-w-[1200px] mx-auto px-margin mb-xl">
-<div class="relative w-full overflow-hidden bg-primary-container p-lg md:p-xl flex flex-col md:flex-row items-center justify-between gap-lg">
-<div class="absolute inset-0 opacity-20 pointer-events-none">
-<img alt="Texture" class="w-full h-full object-cover mix-blend-overlay" data-alt="Abstract macro photography of the textured surface of a padel racket. The lighting highlights the carbon fiber weave and the perforations, casting deep, structural shadows. The color palette is restricted to deep dark greens and sharp, high-contrast highlights, conveying a sense of engineered precision and premium athletic gear." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANL-AQpRNzkPJlNTXQJa-u_mcXpG61Vd_mUx4vq--ta2NBAya1yc1cDhPGRIPjkh4kunyTIj6brH79AwvxZBCf0qpmqkYw0qG7PlXgRGRJyLYaD2-0XfuvqQ2jg8w695kkOnfFJDeqr3V_HiqvRyEhaDmIjXEUXIlPTIh1qJKegNYGxiFj6WMz-4thWKqXsqM7h6d_mw7cLkmFhWBzgqi7WRfM1wkGU_ZHhxJFxzlrnSAR1Spowx8JDsBkcOFZzT3O4WbNjfZDJbo"/>
-</div>
-<div class="relative z-10 flex-1">
-<div class="flex items-center gap-sm mb-base">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
-<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Torneo Destacado</span>
-</div>
-<h2 class="font-headline-md md:text-headline-lg text-on-surface mb-sm">🏆 Torneo de Verano 7Pádel</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-margin max-w-[500px]">El evento más esperado de la temporada. Más de 5000€ en premios. Inscríbete antes del 15 de Julio.</p>
-</div>
-<div class="relative z-10 w-full md:w-auto">
-<button class="w-full md:w-auto bg-secondary text-on-secondary px-lg py-sm rounded-full font-label-md text-label-md uppercase hover:bg-secondary/90 transition-colors shadow-lg shadow-black/50">
-                        Inscripción Abierta
-                    </button>
-</div>
-</div>
-</section>
-<!-- Calendar Section -->
-<section class="max-w-[1200px] mx-auto px-margin mb-xl">
-<div class="flex items-center justify-between mb-lg">
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Próximos Eventos</h2>
-</div>
-<button class="text-secondary font-label-md text-label-md uppercase hover:underline hidden md:block">Ver Calendario Completo</button>
-</div>
-<div class="flex flex-col gap-base">
-<!-- Event 1 -->
-<div class="bg-surface-container-high flex flex-col md:flex-row items-center border-l-4 border-secondary group hover:bg-surface-variant transition-colors">
-<div class="p-md text-center md:border-r border-outline-variant/30 min-w-[120px]">
-<span class="block font-headline-md text-headline-md text-secondary">24</span>
-<span class="block font-label-md text-label-md text-on-surface-variant uppercase">Agosto</span>
-</div>
-<div class="p-md flex-1 w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-base">
-<div>
-<h3 class="font-body-lg text-body-lg text-on-surface mb-xs">Copa Nocturna Express</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Categorías Mixtas • 19:00 - 02:00</p>
-</div>
-<button class="border border-outline text-on-surface px-md py-xs rounded-full font-label-md text-label-md uppercase group-hover:border-secondary group-hover:text-secondary transition-colors">
-                            Detalles
-                        </button>
-</div>
-</div>
-<!-- Event 2 -->
-<div class="bg-surface-container-high flex flex-col md:flex-row items-center border-l-4 border-primary group hover:bg-surface-variant transition-colors">
-<div class="p-md text-center md:border-r border-outline-variant/30 min-w-[120px]">
-<span class="block font-headline-md text-headline-md text-primary">05</span>
-<span class="block font-label-md text-label-md text-on-surface-variant uppercase">Sept.</span>
-</div>
-<div class="p-md flex-1 w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-base">
-<div>
-<h3 class="font-body-lg text-body-lg text-on-surface mb-xs">Inicio Liga de Otoño</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Fase de Grupos • Todas las categorías</p>
-</div>
-<button class="border border-outline text-on-surface px-md py-xs rounded-full font-label-md text-label-md uppercase group-hover:border-primary group-hover:text-primary transition-colors">
-                            Detalles
-                        </button>
-</div>
-</div>
-<button class="text-secondary font-label-md text-label-md uppercase hover:underline mt-sm md:hidden text-center w-full">Ver Calendario Completo</button>
-</div>
-</section>
-<!-- Gallery Section (Masonry) -->
-<section class="max-w-[1200px] mx-auto px-margin mb-xl">
-<div class="flex items-center gap-sm mb-lg">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">photo_library</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Galería de Torneos</h2>
-</div>
-<div class="masonry-grid">
-<!-- Item 1 -->
-<div class="masonry-item relative group overflow-hidden bg-surface-container-low">
-<img alt="Gallery Image 1" class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105 transform" data-alt="A low-angle, high-action photograph of two padel players high-fiving at the net after a competitive point. The lighting is dramatic indoor sports lighting, casting strong shadows against the dark green court surface. The players are silhouetted slightly, emphasizing their athletic posture. The overall mood is triumphant and highly energetic, fitting a premium club environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDqeu3PpmgxV6-TWbguuAh1sqKbporkBSg7_xJlHMFfkeUnS2eXrmYbjyGOjYQm-Z1UeDXb7KfqZDRjsqb6TvsJk5Um8Jv13vbX6C7ISp54LVV9g-3cLa7o_eS0TXiFYe3kyXdkr-qfX3VsZyeQGgVvNQD4xzZxHyfgWl3TRJ-aDxT9teejap0CW6s8w8poCEOTJFCi30EHf1PNfXL3fSaS3xTGvcQhM1MpPD9DmQwoK6wBkV6Q27C07oUoS_z1QRO-hiyn_srqgo"/>
-<div class="absolute bottom-0 left-0 w-full p-md bg-gradient-to-t from-black/90 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-<p class="font-label-md text-label-md text-secondary">Final Open Primavera</p>
-</div>
-</div>
-<!-- Item 2 -->
-<div class="masonry-item relative group overflow-hidden bg-surface-container-low">
-<img alt="Gallery Image 2" class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105 transform" data-alt="Close-up shot of a glowing lime green padel ball resting on a dark, textured court surface right next to the pristine white painted line. Shallow depth of field blurs the background net. The lighting is highly directional, creating a moody, professional sports aesthetic that emphasizes the contrast between the vibrant ball and the deep, rich dark green tones of the environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhoK5Q_pJC-lLtvMszoCYvirpt8IeNlvWj7JnVDSE1YTqRqzfbozbEbIoS3uR27p7vgM08vGoB_xTV2OBKGVvI2m6xlyVhux6jxR2arlayPRnQl7dBLmP7z0LxSMj72B3bX0ZmxK_GyH2pqFI1x1eIfVLjpoxGaDKlW1h-pDxd8fkzWR6ew0iKds6GvN8pugRcMb84bEZe6_Xc_4eiFU5CrOQWm0T-Rm__c1WV8eNns-kRJa26sSzEO6HoUg5GanZUT02KPk_KvSY"/>
-</div>
-<!-- Item 3 -->
-<div class="masonry-item relative group overflow-hidden bg-surface-container-low">
-<img alt="Gallery Image 3" class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105 transform" data-alt="A wide shot of a bustling indoor padel club during a major tournament. Spectators are visible in the blurred foreground, while brightly lit courts form the focal point. The architectural structure of the club features stark black framing and glass walls. The atmosphere is intense and highly competitive, characterized by high-contrast lighting and a sophisticated dark green palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt6YUKGPcDY3Sw6dFueUgvzCxsnZFcU2ztpu3sKw6r4uxPF23UpfhjicKqhNEjN0NOHiwVrPVCEPciLNDKeOR2MFYBgS9HOiR7_lRbtUd4aN7XmRWQblTkZS9h22AIT36hY1KnD9dXBjrCTzaBjh-3cWFyh5zRVS5BznljGF414S-nVXSwfBAF2Ba30IN4OtNsFLeHipK8BDZsfMV3iDIPz0S1Jg_gArMcV2gqXXWar4hkwUzPfTCQteucuucAX-A3FOtVEibr4iE"/>
-<div class="absolute bottom-0 left-0 w-full p-md bg-gradient-to-t from-black/90 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-<p class="font-label-md text-label-md text-secondary">Ambiente Liga Nocturna</p>
-</div>
-</div>
-<!-- Item 4 -->
-<div class="masonry-item relative group overflow-hidden bg-surface-container-low">
-<img alt="Gallery Image 4" class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105 transform" data-alt="A dynamic shot of a player stretching for a difficult defensive return off the glass wall of a padel court. The reflection of the indoor lights on the glass adds complexity to the composition. The color grading leans heavily into dark cinematic tones, with the player's vibrant lime green apparel providing a sharp, high-visibility contrast against the shadowy background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmQoDA1kQG81WJXt5zrtqzcSctRFaHPsWNk9JEHpZPCC5e8tZzKc5kEtSfjU93PXdN1ldMfa1IWmmhVZijC-WmmbIHpwaUPUXPLPAewz2fc7Xko8M-k7SsNn6ovWem71tc2zTXkcvfJ_1KoLhUec3uGt9JjY_DxEBpa3ZtwuUDX1yVA7EnfTwDN6B4_S0JJMei4IYUvv8SpxeN4jZeVhTatjarXihrBwkgeiiJME58LRaLgrnkImloW07gfy_38MiZulNSWloVh04"/>
-</div>
-</div>
-</section>
+
+<main class="flex-grow pt-[64px] md:pt-[80px] pb-12 md:pb-xl">
+  <!-- Hero Section -->
+  <section class="relative w-full min-h-[380px] md:h-[530px] flex items-center justify-center overflow-hidden mb-8 md:mb-xl">
+    <div class="absolute inset-0 z-0">
+      <img alt="Padel Action" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmSmOsg-JYyJyZlqSIcDIoDDJSFOZ1-hlS8FNPS6FvVUwPNI300R7kMPmqtVELTPMwM13J-oI1lD5_0mem_BuEX1vW7WP8nDRQmR10JCZjqCgXaoYvINE5opZXztaOZGKGIaBBVssyhnab35dx5X4Wq1yupzJ3RWCrh89Fh_tIrOENgPltBnzRREWrW0CfsPMfGUE6Wg4EJp5PN_rpwXwzFNC6C8QO1w18ZKt4QqiH41Kjc2cZy1VAgyUVZB1Mm067UVUxki1OYbE"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+    </div>
+    <div class="relative z-10 text-center px-4 md:px-margin max-w-[800px] py-16 md:py-0">
+      <h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface mb-md">Compite. Mejora. Gana.</h1>
+      <p class="font-body-md text-body-md md:text-body-lg md:font-body-lg text-on-surface-variant mb-6 md:mb-margin">Únete a nuestras ligas y torneos. Diseñados para todos los niveles, en las mejores instalaciones de Valencia.</p>
+      <div class="flex flex-col sm:flex-row gap-base justify-center">
+        <button class="bg-secondary text-on-secondary px-lg py-sm rounded-full font-label-md text-label-md uppercase hover:bg-secondary/90 transition-colors">Ver Calendario</button>
+        <button class="border border-on-surface text-on-surface px-lg py-sm rounded-full font-label-md text-label-md uppercase hover:bg-on-surface/10 transition-colors">Reglas</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Bento Grid -->
+  <section class="max-w-[1200px] mx-auto px-4 md:px-margin mb-8 md:mb-xl">
+    <div class="flex items-center gap-sm mb-6 md:mb-lg">
+      <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">category</span>
+      <h2 class="font-headline-md text-headline-md text-on-surface">Categorías de Competición</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-gutter">
+      <div class="bg-surface-container-high p-lg group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-base">
+          <span class="material-symbols-outlined text-outline-variant text-display-lg opacity-20">looks_one</span>
+        </div>
+        <div class="relative z-10">
+          <span class="bg-tertiary text-on-tertiary px-sm py-xs rounded-full font-label-md text-[10px] uppercase mb-sm inline-block">Nivel 1-3</span>
+          <h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Iniciación</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-margin">Perfecto para dar tus primeros pasos competitivos. Ambiente relajado y formativo.</p>
+          <a class="text-secondary font-label-md text-label-md uppercase hover:underline flex items-center gap-xs" href="#">
+            Ver Ligas <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+      <div class="bg-surface-container-high p-lg group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-base">
+          <span class="material-symbols-outlined text-outline-variant text-display-lg opacity-20">looks_two</span>
+        </div>
+        <div class="relative z-10">
+          <span class="bg-primary text-on-primary px-sm py-xs rounded-full font-label-md text-[10px] uppercase mb-sm inline-block">Nivel 3-4.5</span>
+          <h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Intermedio</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-margin">Competición regular para jugadores asentados. Mejora tu ranking local.</p>
+          <a class="text-secondary font-label-md text-label-md uppercase hover:underline flex items-center gap-xs" href="#">
+            Ver Ligas <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+      <div class="bg-surface-container-high p-lg group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden border border-secondary/20">
+        <div class="absolute top-0 right-0 p-base">
+          <span class="material-symbols-outlined text-secondary text-display-lg opacity-20">looks_3</span>
+        </div>
+        <div class="relative z-10">
+          <span class="bg-secondary text-on-secondary px-sm py-xs rounded-full font-label-md text-[10px] uppercase mb-sm inline-block">Nivel 4.5+</span>
+          <h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Avanzado</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-margin">Alta intensidad. Enfréntate a los mejores del club por premios en metálico.</p>
+          <a class="text-secondary font-label-md text-label-md uppercase hover:underline flex items-center gap-xs" href="#">
+            Ver Ligas <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Tournament Banner -->
+  <section class="max-w-[1200px] mx-auto px-4 md:px-margin mb-8 md:mb-xl">
+    <div class="relative w-full overflow-hidden bg-primary-container p-6 md:p-lg lg:p-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-lg">
+      <div class="absolute inset-0 opacity-20 pointer-events-none">
+        <img alt="Texture" class="w-full h-full object-cover mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANL-AQpRNzkPJlNTXQJa-u_mcXpG61Vd_mUx4vq--ta2NBAya1yc1cDhPGRIPjkh4kunyTIj6brH79AwvxZBCf0qpmqkYw0qG7PlXgRGRJyLYaD2-0XfuvqQ2jg8w695kkOnfFJDeqr3V_HiqvRyEhaDmIjXEUXIlPTIh1qJKegNYGxiFj6WMz-4thWKqXsqM7h6d_mw7cLkmFhWBzgqi7WRfM1wkGU_ZJhxJFxzlrnSAR1Spowx8JDsBkcOFZzT3O4WbNjfZDJbo"/>
+      </div>
+      <div class="relative z-10 flex-1">
+        <div class="flex items-center gap-sm mb-base">
+          <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+          <span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Torneo Destacado</span>
+        </div>
+        <h2 class="font-headline-md md:text-headline-lg text-on-surface mb-sm">🏆 Torneo de Verano 7Pádel</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-margin max-w-[500px]">El evento más esperado de la temporada. Más de 5000€ en premios. Inscríbete antes del 15 de Julio.</p>
+      </div>
+      <div class="relative z-10 w-full md:w-auto">
+        <button class="w-full md:w-auto bg-secondary text-on-secondary px-lg py-sm rounded-full font-label-md text-label-md uppercase hover:bg-secondary/90 transition-colors shadow-lg shadow-black/50">
+          Inscripción Abierta
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calendar Section -->
+  <section class="max-w-[1200px] mx-auto px-4 md:px-margin mb-8 md:mb-xl">
+    <div class="flex items-center justify-between mb-6 md:mb-lg">
+      <div class="flex items-center gap-sm">
+        <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+        <h2 class="font-headline-md text-headline-md text-on-surface">Próximos Eventos</h2>
+      </div>
+      <button class="text-secondary font-label-md text-label-md uppercase hover:underline hidden md:block">Ver Calendario Completo</button>
+    </div>
+    <div class="flex flex-col gap-base">
+      <!-- Event 1 -->
+      <div class="bg-surface-container-high flex flex-col sm:flex-row items-stretch border-l-4 border-secondary group hover:bg-surface-variant transition-colors">
+        <div class="p-md text-center sm:border-r border-outline-variant/30 min-w-[100px] md:min-w-[120px] flex sm:flex-col justify-start sm:justify-center items-center gap-sm sm:gap-0">
+          <span class="block font-headline-md text-headline-md text-secondary">24</span>
+          <span class="block font-label-md text-label-md text-on-surface-variant uppercase">Agosto</span>
+        </div>
+        <div class="p-md flex-1 w-full flex flex-col sm:flex-row items-start sm:items-center justify-between gap-base">
+          <div>
+            <h3 class="font-body-lg text-body-lg text-on-surface mb-xs">Copa Nocturna Express</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">Categorías Mixtas • 19:00 - 02:00</p>
+          </div>
+          <button class="border border-outline text-on-surface px-md py-xs rounded-full font-label-md text-label-md uppercase group-hover:border-secondary group-hover:text-secondary transition-colors shrink-0">
+            Detalles
+          </button>
+        </div>
+      </div>
+      <!-- Event 2 -->
+      <div class="bg-surface-container-high flex flex-col sm:flex-row items-stretch border-l-4 border-primary group hover:bg-surface-variant transition-colors">
+        <div class="p-md text-center sm:border-r border-outline-variant/30 min-w-[100px] md:min-w-[120px] flex sm:flex-col justify-start sm:justify-center items-center gap-sm sm:gap-0">
+          <span class="block font-headline-md text-headline-md text-primary">05</span>
+          <span class="block font-label-md text-label-md text-on-surface-variant uppercase">Sept.</span>
+        </div>
+        <div class="p-md flex-1 w-full flex flex-col sm:flex-row items-start sm:items-center justify-between gap-base">
+          <div>
+            <h3 class="font-body-lg text-body-lg text-on-surface mb-xs">Inicio Liga de Otoño</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">Fase de Grupos • Todas las categorías</p>
+          </div>
+          <button class="border border-outline text-on-surface px-md py-xs rounded-full font-label-md text-label-md uppercase group-hover:border-primary group-hover:text-primary transition-colors shrink-0">
+            Detalles
+          </button>
+        </div>
+      </div>
+      <button class="text-secondary font-label-md text-label-md uppercase hover:underline mt-sm md:hidden text-center w-full">Ver Calendario Completo</button>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="max-w-[1200px] mx-auto px-4 md:px-margin mb-8 md:mb-xl">
+    <div class="flex items-center gap-sm mb-6 md:mb-lg">
+      <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">photo_library</span>
+      <h2 class="font-headline-md text-headline-md text-on-surface">Galería de Torneos</h2>
+    </div>
+    <div class="masonry-grid">
+      <div class="masonry-item relative group overflow-hidden bg-surface-container-low">
+        <img alt="Gallery Image 1" class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105 transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDqeu3PpmgxV6-TWbguuAh1sqKbporkBSg7_xJlHMFfkeUnS2eXrmYbjyGOjYQm-Z1UeDXb7KfqZDRjsqb6TvsJk5Um8Jv13vbX6C7ISp54LVV9g-3cLa7o_eS0TXiFYe3kyXdkr-qfX3VsZyeQGgVvNQD4xzZxHyfgWl3TRJ-aDxT9teejap0CW6s8w8poCEOTJFCi30EHf1PNfXL3fSaS3xTGvcQhM1MpPD9DmQwoK6wBkV6Q27C07oUoS_z1QRO-hiyn_srqgo"/>
+        <div class="absolute bottom-0 left-0 w-full p-md bg-gradient-to-t from-black/90 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p class="font-label-md text-label-md text-secondary">Final Open Primavera</p>
+        </div>
+      </div>
+      <div class="masonry-item relative group overflow-hidden bg-surface-container-low">
+        <img alt="Gallery Image 2" class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105 transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhoK5Q_pJC-lLtvMszoCYvirpt8IeNlvWj7JnVDSE1YTqRqzfbozbEbIoS3uR27p7vgM08vGoB_xTV2OBKGVvI2m6xlyVhux6jxR2arlayPRnQl7dBLmP7z0LxSMj72B3bX0ZmxK_GyH2pqFI1x1eIfVLjpoxGaDKlW1h-pDxd8fkzWR6ew0iKds6GvN8pugRcMb84bEZe6_Xc_4eiFU5CrOQWm0T-Rm__c1WV8eNns-kRJa26sSzEO6HoUg5GanZUT02KPk_KvSY"/>
+      </div>
+      <div class="masonry-item relative group overflow-hidden bg-surface-container-low">
+        <img alt="Gallery Image 3" class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105 transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt6YUKGPcDY3Sw6dFueUgvzCxsnZFcU2ztpu3sKw6r4uxPF23UpfhjicKqhNEjN0NOHiwVrPVCEPciLNDKeOR2MFYBgS9HOiR7_lRbtUd4AtNeFLeHipK8BDZsfMV3iDIPz0S1Jg_gArMcV2gqXXWar4hkwUzPfTCQteucuucAX-A3FOtVEibr4iE"/>
+        <div class="absolute bottom-0 left-0 w-full p-md bg-gradient-to-t from-black/90 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p class="font-label-md text-label-md text-secondary">Ambiente Liga Nocturna</p>
+        </div>
+      </div>
+      <div class="masonry-item relative group overflow-hidden bg-surface-container-low">
+        <img alt="Gallery Image 4" class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105 transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmQoDA1kQG81WJXt5zrtqzcSctRFaHPsWNk9JEHpZPCC5e8tZzKc5kEtSfjU93PXdN1ldMfa1IWmmhVZijC-WmmbIHpwaUPUXPLPAewz2fc7Xko8M-k7SsNn6ovWem71tc2zTXkcvfJ_1KoLhUec3uGt9JjY_DxEBpa3ZtwuUDX1yVA7EnfTwDN6B4_S0JJMei4IYUvv8SpxeN4jZeVhTatjarXihrBwkgeiiJME58LRaLgrnkImloW07gfy_38MiZulNSWloVh04"/>
+      </div>
+    </div>
+  </section>
 </main>
+
 <!-- Footer -->
-<footer class="w-full py-lg bg-surface-container-lowest border-t border-outline-variant flat no shadows mt-auto">
-<div class="max-w-[1200px] mx-auto px-margin grid grid-cols-1 md:grid-cols-4 gap-gutter">
-<div class="flex flex-col gap-sm">
-<span class="font-display-lg text-headline-md text-on-surface">7Pádel</span>
-<p class="font-body-md text-body-md text-on-surface-variant">© 2024 7Pádel Valencia. All rights reserved.</p>
-</div>
-<div class="flex flex-col gap-sm">
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100" href="#">Contacto</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100" href="#">Aviso Legal</a>
-</div>
-<div class="flex flex-col gap-sm">
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100" href="#">Privacidad</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100" href="#">Cookies</a>
-</div>
-<div class="flex flex-col gap-sm">
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100" href="#">Sponsors</a>
-</div>
-</div>
+<footer class="w-full py-lg bg-surface-container-lowest border-t border-outline-variant mt-auto">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-margin grid grid-cols-2 md:grid-cols-4 gap-gutter">
+    <div class="col-span-2 md:col-span-1 flex flex-col gap-sm mb-2 md:mb-0">
+      <span class="font-display-lg text-headline-md text-on-surface">7Pádel</span>
+      <p class="font-body-md text-body-md text-on-surface-variant">© 2024 7Pádel Valencia. All rights reserved.</p>
+    </div>
+    <div class="flex flex-col gap-sm">
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100" href="#">Contacto</a>
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100" href="#">Aviso Legal</a>
+    </div>
+    <div class="flex flex-col gap-sm">
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100" href="#">Privacidad</a>
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100" href="#">Cookies</a>
+    </div>
+    <div class="flex flex-col gap-sm">
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100" href="#">Sponsors</a>
+    </div>
+  </div>
 </footer>
+
+<script>
+  const t = document.getElementById('menu-toggle');
+  const m = document.getElementById('mobile-menu');
+  const i = document.getElementById('menu-icon');
+  t.addEventListener('click', () => {
+    if (m.classList.contains('hidden')) {
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+      i.textContent = 'close';
+    } else {
+      m.classList.remove('flex');
+      m.classList.add('hidden');
+      i.textContent = 'menu';
+    }
+  });
+</script>
 </body></html>

@@ -1,362 +1,378 @@
 <!DOCTYPE html>
-
 <html class="dark" lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>7Pádel - Valencia</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "tertiary": "#55d5fd",
-                        "surface-bright": "#363a3e",
-                        "secondary-fixed-dim": "#a4d64c",
-                        "on-primary-container": "#80bea6",
-                        "on-error-container": "#ffdad6",
-                        "inverse-primary": "#2b6954",
-                        "secondary-container": "#719e13",
-                        "on-secondary-fixed-variant": "#354e00",
-                        "inverse-on-surface": "#2d3135",
-                        "secondary": "#a4d64c",
-                        "outline": "#89938d",
-                        "on-primary-fixed": "#002117",
-                        "on-surface-variant": "#bfc9c3",
-                        "tertiary-fixed-dim": "#55d5fd",
-                        "surface-container-high": "#262a2e",
-                        "background": "#101418",
-                        "on-tertiary-fixed": "#001f28",
-                        "on-error": "#690005",
-                        "secondary-fixed": "#bff365",
-                        "surface-tint": "#95d3ba",
-                        "on-surface": "#e0e3e8",
-                        "surface-container": "#1c2024",
-                        "surface-container-lowest": "#0b0f12",
-                        "surface-container-low": "#181c20",
-                        "surface-variant": "#313539",
-                        "primary-container": "#064e3b",
-                        "error": "#ffb4ab",
-                        "on-secondary": "#233600",
-                        "surface": "#101418",
-                        "surface-dim": "#101418",
-                        "primary-fixed": "#b0f0d6",
-                        "on-secondary-container": "#1e2f00",
-                        "primary": "#95d3ba",
-                        "on-primary-fixed-variant": "#0b513d",
-                        "surface-container-highest": "#313539",
-                        "on-tertiary-container": "#38c0e7",
-                        "on-tertiary": "#003543",
-                        "error-container": "#93000a",
-                        "tertiary-container": "#004b5d",
-                        "outline-variant": "#404944",
-                        "tertiary-fixed": "#b6eaff",
-                        "on-primary": "#003829",
-                        "on-tertiary-fixed-variant": "#004e60",
-                        "inverse-surface": "#e0e3e8",
-                        "on-secondary-fixed": "#131f00",
-                        "primary-fixed-dim": "#95d3ba",
-                        "on-background": "#e0e3e8"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "md": "24px",
-                        "xs": "4px",
-                        "margin": "32px",
-                        "xl": "80px",
-                        "sm": "12px",
-                        "gutter": "24px",
-                        "base": "8px",
-                        "lg": "48px"
-                    },
-                    "fontFamily": {
-                        "display-lg": ["Anybody", "sans-serif"],
-                        "body-lg": ["Inter", "sans-serif"],
-                        "body-md": ["Inter", "sans-serif"],
-                        "headline-md": ["Anybody", "sans-serif"],
-                        "headline-lg-mobile": ["Anybody", "sans-serif"],
-                        "headline-lg": ["Anybody", "sans-serif"],
-                        "label-md": ["Inter", "sans-serif"]
-                    },
-                    "fontSize": {
-                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
-                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
-                        "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }]
-                    }
-                }
-            }
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary": "#55d5fd",
+          "surface-bright": "#363a3e",
+          "secondary-fixed-dim": "#a4d64c",
+          "on-primary-container": "#80bea6",
+          "on-error-container": "#ffdad6",
+          "inverse-primary": "#2b6954",
+          "secondary-container": "#719e13",
+          "on-secondary-fixed-variant": "#354e00",
+          "inverse-on-surface": "#2d3135",
+          "secondary": "#a4d64c",
+          "outline": "#89938d",
+          "on-primary-fixed": "#002117",
+          "on-surface-variant": "#bfc9c3",
+          "tertiary-fixed-dim": "#55d5fd",
+          "surface-container-high": "#262a2e",
+          "background": "#101418",
+          "on-tertiary-fixed": "#001f28",
+          "on-error": "#690005",
+          "secondary-fixed": "#bff365",
+          "surface-tint": "#95d3ba",
+          "on-surface": "#e0e3e8",
+          "surface-container": "#1c2024",
+          "surface-container-lowest": "#0b0f12",
+          "surface-container-low": "#181c20",
+          "surface-variant": "#313539",
+          "primary-container": "#064e3b",
+          "error": "#ffb4ab",
+          "on-secondary": "#233600",
+          "surface": "#101418",
+          "surface-dim": "#101418",
+          "primary-fixed": "#b0f0d6",
+          "on-secondary-container": "#1e2f00",
+          "primary": "#95d3ba",
+          "on-primary-fixed-variant": "#0b513d",
+          "surface-container-highest": "#313539",
+          "on-tertiary-container": "#38c0e7",
+          "on-tertiary": "#003543",
+          "error-container": "#93000a",
+          "tertiary-container": "#004b5d",
+          "outline-variant": "#404944",
+          "tertiary-fixed": "#b6eaff",
+          "on-primary": "#003829",
+          "on-tertiary-fixed-variant": "#004e60",
+          "inverse-surface": "#e0e3e8",
+          "on-secondary-fixed": "#131f00",
+          "primary-fixed-dim": "#95d3ba",
+          "on-background": "#e0e3e8"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "md": "24px",
+          "xs": "4px",
+          "margin": "32px",
+          "xl": "80px",
+          "sm": "12px",
+          "gutter": "24px",
+          "base": "8px",
+          "lg": "48px"
+        },
+        "fontFamily": {
+          "display-lg": ["Anybody", "sans-serif"],
+          "body-lg": ["Inter", "sans-serif"],
+          "body-md": ["Inter", "sans-serif"],
+          "headline-md": ["Anybody", "sans-serif"],
+          "headline-lg-mobile": ["Anybody", "sans-serif"],
+          "headline-lg": ["Anybody", "sans-serif"],
+          "label-md": ["Inter", "sans-serif"]
+        },
+        "fontSize": {
+          "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+          "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+          "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+          "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+          "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+          "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+          "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }]
         }
-    </script>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
+      }
     }
-  </style>
-  </head>
+  }
+</script>
+<style>
+  body { min-height: 100dvh; }
+</style>
+</head>
 <body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-secondary selection:text-on-secondary">
-<!-- TopAppBar -->
+
+<!-- Header -->
 <header class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-outline-variant">
-<div class="flex justify-between items-center px-margin py-base max-w-[1200px] mx-auto">
-<a href="index.html" class="flex items-center gap-sm hover:bg-secondary/10 p-2 rounded transition-colors">
-<span class="material-symbols-outlined text-secondary font-headline-md text-headline-md" style="font-variation-settings: 'FILL' 1;">sports_tennis</span>
-<span class="font-display-lg text-headline-md text-on-surface uppercase tracking-tighter">7Pádel</span>
-</a>
-<!-- Desktop Nav (Hidden on Mobile) -->
-<nav class="hidden md:flex items-center gap-md">
-<a class="text-secondary font-bold border-b-2 border-secondary pb-1" href="index.html">Inicio</a>
-<a class="text-on-surface hover:text-secondary transition-colors pb-1" href="instalaciones.html">Instalaciones</a>
-<a class="text-on-surface hover:text-secondary transition-colors pb-1" href="academia.html">Academia</a>
-<a class="text-on-surface hover:text-secondary transition-colors pb-1" href="ligas-torneos.html">Ligas &amp; Torneos</a>
-</nav>
-<a href="#reservar" class="bg-secondary text-on-secondary font-label-md text-label-md px-gutter py-sm rounded-full hover:bg-secondary-fixed transition-colors uppercase flex items-center gap-xs">
-                RESERVAR
-                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
-</div>
+  <div class="flex justify-between items-center px-4 md:px-margin py-base max-w-[1200px] mx-auto">
+    <a href="index.html" class="flex items-center gap-sm hover:bg-secondary/10 p-2 rounded transition-colors">
+      <span class="material-symbols-outlined text-secondary text-headline-md" style="font-variation-settings: 'FILL' 1;">sports_tennis</span>
+      <span class="font-display-lg text-headline-md text-on-surface uppercase tracking-tighter">7Pádel</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-md">
+      <a class="text-secondary font-bold border-b-2 border-secondary pb-1" href="index.html">Inicio</a>
+      <a class="text-on-surface hover:text-secondary transition-colors pb-1" href="instalaciones.html">Instalaciones</a>
+      <a class="text-on-surface hover:text-secondary transition-colors pb-1" href="academia.html">Academia</a>
+      <a class="text-on-surface hover:text-secondary transition-colors pb-1" href="ligas-torneos.html">Ligas &amp; Torneos</a>
+    </nav>
+    <div class="flex items-center gap-sm">
+      <a href="#reservar" class="hidden md:flex bg-secondary text-on-secondary font-label-md text-label-md px-gutter py-sm rounded-full hover:bg-secondary-fixed transition-colors uppercase items-center gap-xs">
+        RESERVAR
+        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </a>
+      <button id="menu-toggle" class="md:hidden p-2 text-on-surface hover:text-secondary transition-colors" aria-label="Abrir menú">
+        <span class="material-symbols-outlined text-[28px]" id="menu-icon">menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" class="hidden md:hidden flex-col bg-background border-t border-outline-variant px-4 py-md gap-base">
+    <a class="font-label-md text-label-md text-secondary uppercase py-sm border-b border-outline-variant" href="index.html">Inicio</a>
+    <a class="font-label-md text-label-md text-on-surface hover:text-secondary uppercase py-sm border-b border-outline-variant transition-colors" href="instalaciones.html">Instalaciones</a>
+    <a class="font-label-md text-label-md text-on-surface hover:text-secondary uppercase py-sm border-b border-outline-variant transition-colors" href="academia.html">Academia</a>
+    <a class="font-label-md text-label-md text-on-surface hover:text-secondary uppercase py-sm border-b border-outline-variant transition-colors" href="ligas-torneos.html">Ligas &amp; Torneos</a>
+    <a href="#reservar" class="mt-sm bg-secondary text-on-secondary font-label-md text-label-md px-gutter py-sm rounded-full uppercase text-center">RESERVAR</a>
+  </nav>
 </header>
-<!-- Main Content Canvas -->
-<main class="pt-[80px]"> <!-- Offset for fixed header -->
-<!-- Hero Section -->
-<section class="relative w-full h-[707px] min-h-[600px] flex items-center justify-center overflow-hidden border-b border-outline-variant">
-<!-- Background Image -->
-<div class="absolute inset-0 z-0 bg-cover bg-center" data-alt="High-contrast, professional sports photography of an indoor padel court. The scene captures the dramatic lighting of a high-end sports facility, with intense focus on the illuminated blue court surface against a dark, moody background. Strong shadows and a sense of dynamic action permeate the frame, aligning with a premium, competitive aesthetic. The atmosphere is tense and energetic, featuring tactical bursts of high-visibility tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCM68lbjJggyP7VWeciJRK3mlpBc1LoQFzQhyOwUfg0xiLErEhvOc5s5ft-mpjDi_IDF9VvDByqv4TlY8fnK1IxCqm995Q1yxEDAXJu_O4rrDfEMP-Ec13SesCsipgk2H4VtYp7YVX2AzuWXkBfA-LL7Oo9xsQZicJFq-TV48OjhBMWacWFj-61Anjq7KViagB7kvgW55DkqmWLMn-DuJxW4x3IVmVwI_0qAvBNZOiobaOTY_VYwe8XwxC6byhxcXRZvChOLp-N_gs');"></div>
-<!-- Dark Gradient Overlay for legibility -->
-<div class="absolute inset-0 z-10 bg-gradient-to-t from-background via-background/80 to-background/30"></div>
-<div class="relative z-20 max-w-[1200px] mx-auto px-margin w-full flex flex-col items-start gap-lg">
-<div class="flex flex-col gap-sm max-w-2xl">
-<div class="inline-flex items-center gap-xs bg-surface-variant/50 backdrop-blur-sm border border-outline-variant rounded-full px-sm py-xs w-fit">
-<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="font-label-md text-label-md text-secondary uppercase">Valencia Capital</span>
-</div>
-<h1 class="font-display-lg text-display-lg text-on-surface leading-tight">El club de pádel más completo de Valencia Capital</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mt-md">11 Pistas Premium Indoor. Sede Oficial WPT. Diseño de alto rendimiento para jugadores exigentes.</p>
-</div>
-<div class="flex flex-col sm:flex-row gap-md w-full sm:w-auto mt-sm">
-<a href="#reservar" class="bg-secondary text-on-secondary font-label-md text-label-md px-lg py-md rounded-full hover:bg-secondary-fixed transition-colors uppercase w-full sm:w-auto text-center flex items-center justify-center gap-sm">
-                        Reservar Pista Ahora
-                        <span class="material-symbols-outlined text-[20px]">calendar_month</span>
-</a>
-<a href="#tarifas" class="bg-transparent border border-on-surface text-on-surface font-label-md text-label-md px-lg py-md rounded-full hover:bg-on-surface/10 transition-colors uppercase w-full sm:w-auto text-center">
-                        Ver Tarifas
-                    </a>
-</div>
-</div>
-</section>
-<!-- Value Proposition Section -->
-<section class="py-xl max-w-[1200px] mx-auto px-margin">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Card 1 -->
-<div class="bg-surface-container-low border border-outline-variant p-lg flex flex-col items-start gap-md hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden group">
-<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-<span class="material-symbols-outlined text-[100px] text-secondary">workspace_premium</span>
-</div>
-<div class="bg-primary-container p-sm rounded-full">
-<span class="material-symbols-outlined text-secondary text-[32px]">workspace_premium</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface">Pistas WPT</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Superficies homologadas y cristal panorámico para una experiencia profesional en cada partido.</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-surface-container-low border border-outline-variant p-lg flex flex-col items-start gap-md hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden group">
-<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-<span class="material-symbols-outlined text-[100px] text-tertiary">emoji_events</span>
-</div>
-<div class="bg-tertiary-container p-sm rounded-full">
-<span class="material-symbols-outlined text-tertiary text-[32px]">emoji_events</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface">Ligas y Torneos</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Compite todo el año en diferentes niveles. Ranking actualizado y premios en metálico.</p>
-</div>
-<!-- Card 3 -->
-<div class="bg-surface-container-low border border-outline-variant p-lg flex flex-col items-start gap-md hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden group">
-<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-<span class="material-symbols-outlined text-[100px] text-primary">school</span>
-</div>
-<div class="bg-primary-container p-sm rounded-full">
-<span class="material-symbols-outlined text-primary text-[32px]">school</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface">Escuela</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Clases para todos los niveles con entrenadores titulados. Mejora tu técnica y táctica.</p>
-</div>
-</div>
-</section>
-<!-- Pricing Section (Bento Grid Style) -->
-<section id="tarifas" class="py-xl bg-surface-container-highest border-y border-outline-variant">
-<div class="max-w-[1200px] mx-auto px-margin">
-<div class="text-center mb-xl">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Tarifas Transparentes</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Precios por persona para partidas de 1.5h. Selecciona la franja que mejor se adapte a tu ritmo.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
-<!-- Morning/Night Card -->
-<div class="col-span-1 md:col-span-1 bg-surface border border-outline-variant p-lg flex flex-col gap-md relative group">
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-on-surface-variant">light_mode</span>
-<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Mañanas / Noches</h4>
-</div>
-<div class="mt-auto">
-<span class="font-display-lg text-[48px] font-bold text-on-surface">5.75€</span>
-<span class="font-body-md text-on-surface-variant">/jugador</span>
-</div>
-<p class="font-body-sm text-on-surface-variant text-sm mt-xs">Lun-Vie: 8:00 - 13:30<br/>Lun-Vie: 22:30 - Cierre</p>
-</div>
-<!-- Midday Card (Popular) -->
-<div class="col-span-1 md:col-span-1 bg-primary-container border border-secondary p-lg flex flex-col gap-md relative overflow-hidden">
-<div class="absolute top-0 right-0 bg-secondary text-on-secondary font-label-md text-[10px] px-sm py-xs uppercase tracking-widest rounded-bl">Popular</div>
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-secondary">wb_sunny</span>
-<h4 class="font-label-md text-label-md text-secondary uppercase tracking-wider">Mediodía</h4>
-</div>
-<div class="mt-auto">
-<span class="font-display-lg text-[48px] font-bold text-on-surface">7.25€</span>
-<span class="font-body-md text-on-surface-variant">/jugador</span>
-</div>
-<p class="font-body-sm text-on-surface-variant text-sm mt-xs">Lun-Vie: 13:30 - 17:00</p>
-</div>
-<!-- Prime Time Card -->
-<div class="col-span-1 md:col-span-1 bg-surface border border-outline-variant p-lg flex flex-col gap-md">
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-error">local_fire_department</span>
-<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Prime Time</h4>
-</div>
-<div class="mt-auto">
-<span class="font-display-lg text-[48px] font-bold text-on-surface">9.00€</span>
-<span class="font-body-md text-on-surface-variant">/jugador</span>
-</div>
-<p class="font-body-sm text-on-surface-variant text-sm mt-xs">Lun-Vie: 17:00 - 22:30</p>
-</div>
-<!-- Weekend Card (Full Height in desktop) -->
-<div class="col-span-1 md:col-span-1 bg-surface-container-low border border-outline-variant p-lg flex flex-col gap-md justify-between bg-cover bg-center relative" data-alt="High-contrast close up of a padel ball and racket on a textured blue court surface. The lighting is dramatic, casting deep ambient shadows to emphasize the professional sports environment. The aesthetic is gritty yet premium, using the dark green and black tonal layers of the global palette to create depth." style="background-image: linear-gradient(to bottom, rgba(16, 20, 24, 0.9), rgba(16, 20, 24, 0.7)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZSX7rek--Z6BO0LLv6GAkpjxQjArxbo47GYsVxePp732OP2Y5OssvxTH6pPbuoxkBo7_pBPjw6ivmlFFkWrLsqh8WqVZkTdvUVHvITZnxJPZ5XeEJcAZmLfw6S8txhBZwO29Qp0QutHFgUWw4jiWtaD4DbP_Rpj2L6O6cSIAwG4bAiGWa4YVmtRuRtrhJj_MyArZKKgSoCQxRNP6OzQNrPNWx5GxhiPGNJqVrfemYBwOIusQDkqM3jm3knyG9NvWFl2Ltzd230_I');">
-<div class="relative z-10">
-<div class="flex items-center gap-sm mb-md">
-<span class="material-symbols-outlined text-on-surface">event</span>
-<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Fin de Semana</h4>
-</div>
-<span class="font-display-lg text-[48px] font-bold text-on-surface block">6.50€</span>
-<span class="font-body-md text-on-surface-variant block mb-sm">/jugador</span>
-<p class="font-body-sm text-on-surface-variant text-sm">Sábados, Domingos y Festivos (Todo el día)</p>
-</div>
-<button class="relative z-10 mt-md w-full bg-transparent border border-on-surface text-on-surface font-label-md text-label-md py-sm rounded-full hover:bg-on-surface hover:text-surface transition-colors uppercase">
-                            Ver Detalles
-                        </button>
-</div>
-</div>
-</div>
-</section>
-<!-- WPT Section -->
-<section class="py-xl bg-[#000000] border-b border-outline-variant relative overflow-hidden">
-<!-- Background Texture/Light -->
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary/10 rounded-full blur-[120px] pointer-events-none"></div>
-<div class="max-w-[1200px] mx-auto px-margin relative z-10 flex flex-col items-center text-center gap-lg">
-<div class="flex items-center gap-gutter opacity-80 mb-md">
-<span class="font-display-lg text-headline-md text-on-surface uppercase tracking-tighter">7Pádel</span>
-<span class="text-on-surface-variant">X</span>
-<span class="font-display-lg text-headline-md text-on-surface uppercase tracking-tighter italic">World Padel Tour</span>
-</div>
-<h2 class="font-display-lg text-display-lg text-on-surface max-w-3xl">Sede Oficial World Padel Tour</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Entrena y compite en las mismas pistas donde se forjan los campeones. Nuestro club cumple con los más altos estándares exigidos por el circuito profesional.</p>
-<a href="instalaciones.html" class="mt-sm inline-block bg-secondary text-on-secondary font-label-md text-label-md px-lg py-md rounded-full hover:bg-secondary-fixed transition-colors uppercase">
-                    Descubre las Pistas
-                </a>
-</div>
-</section>
-<!-- Contact/Lead Form Section -->
-<section id="reservar" class="py-xl max-w-[1200px] mx-auto px-margin">
-<div class="bg-surface-container-low border border-outline-variant p-lg md:p-xl grid grid-cols-1 md:grid-cols-2 gap-xl items-center relative overflow-hidden">
-<!-- Decorative Element -->
-<div class="absolute -right-20 -bottom-20 w-64 h-64 bg-primary-container rounded-full blur-3xl opacity-50 pointer-events-none"></div>
-<div class="relative z-10">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">¿Primera vez?<br/><span class="text-secondary">Prueba gratis.</span></h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">Déjanos tus datos y te invitamos a tu primera partida de nivelación o clase de prueba en nuestra academia.</p>
-<div class="flex items-center gap-sm mt-lg text-on-surface-variant">
-<span class="material-symbols-outlined text-secondary">location_on</span>
-<span class="font-body-md">Polígono Industrial Vara de Quart, Valencia</span>
-</div>
-</div>
-<div class="relative z-10 bg-surface border border-outline-variant p-lg shadow-lg shadow-surface-container-lowest">
-<form class="flex flex-col gap-md">
-<div class="flex flex-col gap-xs">
-<label class="font-label-md text-label-md text-on-surface uppercase" for="name">Nombre Completo</label>
-<input class="bg-surface-bright border-b border-outline-variant focus:border-secondary focus:ring-0 text-on-surface font-body-md p-sm transition-colors rounded-t" id="name" placeholder="Tu nombre" type="text"/>
-</div>
-<div class="flex flex-col gap-xs">
-<label class="font-label-md text-label-md text-on-surface uppercase" for="phone">Teléfono</label>
-<input class="bg-surface-bright border-b border-outline-variant focus:border-secondary focus:ring-0 text-on-surface font-body-md p-sm transition-colors rounded-t" id="phone" placeholder="600 00 00 00" type="tel"/>
-</div>
-<div class="flex flex-col gap-xs">
-<label class="font-label-md text-label-md text-on-surface uppercase" for="interest">Me interesa</label>
-<select class="bg-surface-bright border-b border-outline-variant focus:border-secondary focus:ring-0 text-on-surface font-body-md p-sm transition-colors rounded-t appearance-none" id="interest">
-<option>Jugar un partido (Nivelación)</option>
-<option>Clase de prueba (Escuela)</option>
-<option>Información general</option>
-</select>
-</div>
-<button class="mt-sm bg-secondary text-on-secondary font-label-md text-label-md py-md rounded-full hover:bg-secondary-fixed transition-colors uppercase w-full" type="submit">
-                            Solicitar Prueba
-                        </button>
-</form>
-</div>
-</div>
-</section>
+
+<main class="pt-[64px] md:pt-[80px]">
+  <!-- Hero Section -->
+  <section class="relative w-full min-h-[480px] md:h-[707px] flex items-center justify-center overflow-hidden border-b border-outline-variant">
+    <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCM68lbjJggyP7VWeciJRK3mlpBc1LoQFzQhyOwUfg0xiLErEhvOc5s5ft-mpjDi_IDF9VvDByqv4TlY8fnK1IxCqm995Q1yxEDAXJu_O4rrDfEMP-Ec13SesCsipgk2H4VtYp7YVX2AzuWXkBfA-LL7Oo9xsQZicJFq-TV48OjhBMWacWFj-61Anjq7KViagB7kvgW55DkqmWLMn-DuJxW4x3IVmVwI_0qAvBNZOiobaOTY_VYwe8XwxC6byhxcXRZvChOLp-N_gs');"></div>
+    <div class="absolute inset-0 z-10 bg-gradient-to-t from-background via-background/80 to-background/30"></div>
+    <div class="relative z-20 max-w-[1200px] mx-auto px-4 md:px-margin w-full flex flex-col items-start gap-lg py-16 md:py-0">
+      <div class="flex flex-col gap-sm max-w-2xl">
+        <div class="inline-flex items-center gap-xs bg-surface-variant/50 backdrop-blur-sm border border-outline-variant rounded-full px-sm py-xs w-fit">
+          <span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="font-label-md text-label-md text-secondary uppercase">Valencia Capital</span>
+        </div>
+        <h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface leading-tight">El club de pádel más completo de Valencia Capital</h1>
+        <p class="font-body-md text-body-md md:text-body-lg md:font-body-lg text-on-surface-variant mt-sm md:mt-md">11 Pistas Premium Indoor. Sede Oficial WPT. Diseño de alto rendimiento para jugadores exigentes.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-sm md:gap-md w-full sm:w-auto mt-sm">
+        <a href="#reservar" class="bg-secondary text-on-secondary font-label-md text-label-md px-lg py-sm md:py-md rounded-full hover:bg-secondary-fixed transition-colors uppercase w-full sm:w-auto text-center flex items-center justify-center gap-sm">
+          Reservar Pista Ahora
+          <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+        </a>
+        <a href="#tarifas" class="bg-transparent border border-on-surface text-on-surface font-label-md text-label-md px-lg py-sm md:py-md rounded-full hover:bg-on-surface/10 transition-colors uppercase w-full sm:w-auto text-center">
+          Ver Tarifas
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Proposition Section -->
+  <section class="py-12 md:py-xl max-w-[1200px] mx-auto px-4 md:px-margin">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-gutter">
+      <div class="bg-surface-container-low border border-outline-variant p-lg flex flex-col items-start gap-md hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden group">
+        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+          <span class="material-symbols-outlined text-[100px] text-secondary">workspace_premium</span>
+        </div>
+        <div class="bg-primary-container p-sm rounded-full">
+          <span class="material-symbols-outlined text-secondary text-[32px]">workspace_premium</span>
+        </div>
+        <h3 class="font-headline-md text-headline-md text-on-surface">Pistas WPT</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant">Superficies homologadas y cristal panorámico para una experiencia profesional en cada partido.</p>
+      </div>
+      <div class="bg-surface-container-low border border-outline-variant p-lg flex flex-col items-start gap-md hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden group">
+        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+          <span class="material-symbols-outlined text-[100px] text-tertiary">emoji_events</span>
+        </div>
+        <div class="bg-tertiary-container p-sm rounded-full">
+          <span class="material-symbols-outlined text-tertiary text-[32px]">emoji_events</span>
+        </div>
+        <h3 class="font-headline-md text-headline-md text-on-surface">Ligas y Torneos</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant">Compite todo el año en diferentes niveles. Ranking actualizado y premios en metálico.</p>
+      </div>
+      <div class="bg-surface-container-low border border-outline-variant p-lg flex flex-col items-start gap-md hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden group sm:col-span-2 md:col-span-1">
+        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+          <span class="material-symbols-outlined text-[100px] text-primary">school</span>
+        </div>
+        <div class="bg-primary-container p-sm rounded-full">
+          <span class="material-symbols-outlined text-primary text-[32px]">school</span>
+        </div>
+        <h3 class="font-headline-md text-headline-md text-on-surface">Escuela</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant">Clases para todos los niveles con entrenadores titulados. Mejora tu técnica y táctica.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="tarifas" class="py-12 md:py-xl bg-surface-container-highest border-y border-outline-variant">
+    <div class="max-w-[1200px] mx-auto px-4 md:px-margin">
+      <div class="text-center mb-8 md:mb-xl">
+        <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-sm">Tarifas Transparentes</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Precios por persona para partidas de 1.5h. Selecciona la franja que mejor se adapte a tu ritmo.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-sm md:gap-gutter">
+        <div class="col-span-1 bg-surface border border-outline-variant p-md md:p-lg flex flex-col gap-sm md:gap-md relative group">
+          <div class="flex items-center gap-xs md:gap-sm">
+            <span class="material-symbols-outlined text-on-surface-variant text-[20px]">light_mode</span>
+            <h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider text-[11px] md:text-label-md">Mañanas / Noches</h4>
+          </div>
+          <div class="mt-auto">
+            <span class="font-display-lg text-[36px] md:text-[48px] font-bold text-on-surface">5.75€</span>
+            <span class="font-body-md text-on-surface-variant text-sm">/jugador</span>
+          </div>
+          <p class="font-body-md text-on-surface-variant text-xs md:text-sm mt-xs">Lun-Vie: 8:00 - 13:30<br/>Lun-Vie: 22:30 - Cierre</p>
+        </div>
+        <div class="col-span-1 bg-primary-container border border-secondary p-md md:p-lg flex flex-col gap-sm md:gap-md relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-secondary text-on-secondary font-label-md text-[9px] md:text-[10px] px-sm py-xs uppercase tracking-widest rounded-bl">Popular</div>
+          <div class="flex items-center gap-xs md:gap-sm">
+            <span class="material-symbols-outlined text-secondary text-[20px]">wb_sunny</span>
+            <h4 class="font-label-md text-label-md text-secondary uppercase tracking-wider text-[11px] md:text-label-md">Mediodía</h4>
+          </div>
+          <div class="mt-auto">
+            <span class="font-display-lg text-[36px] md:text-[48px] font-bold text-on-surface">7.25€</span>
+            <span class="font-body-md text-on-surface-variant text-sm">/jugador</span>
+          </div>
+          <p class="font-body-md text-on-surface-variant text-xs md:text-sm mt-xs">Lun-Vie: 13:30 - 17:00</p>
+        </div>
+        <div class="col-span-1 bg-surface border border-outline-variant p-md md:p-lg flex flex-col gap-sm md:gap-md">
+          <div class="flex items-center gap-xs md:gap-sm">
+            <span class="material-symbols-outlined text-error text-[20px]">local_fire_department</span>
+            <h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider text-[11px] md:text-label-md">Prime Time</h4>
+          </div>
+          <div class="mt-auto">
+            <span class="font-display-lg text-[36px] md:text-[48px] font-bold text-on-surface">9.00€</span>
+            <span class="font-body-md text-on-surface-variant text-sm">/jugador</span>
+          </div>
+          <p class="font-body-md text-on-surface-variant text-xs md:text-sm mt-xs">Lun-Vie: 17:00 - 22:30</p>
+        </div>
+        <div class="col-span-1 bg-surface-container-low border border-outline-variant p-md md:p-lg flex flex-col gap-sm md:gap-md justify-between bg-cover bg-center relative" style="background-image: linear-gradient(to bottom, rgba(16, 20, 24, 0.9), rgba(16, 20, 24, 0.7)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZSX7rek--Z6BO0LLv6GAkpjxQjArxbo47GYsVxePp732OP2Y5OssvxTH6pPbuoxkBo7_pBPjw6ivmlFFkWrLsqh8WqVZkTdvUVHvITZnxJPZ5XeEJcAZmLfw6S8txhBZwO29Qp0QutHFgUWw4jiWtaD4DbP_Rpj2L6O6cSIAwG4bAiGWa4YVmtRuRtrhJj_MyArZKKgSoCQxRNP6OzQNrPNWx5GxhiPGNJqVrfemYBwOIusQDkqM3jm3knyG9NvWFl2Ltzd230_I');">
+          <div class="relative z-10">
+            <div class="flex items-center gap-xs md:gap-sm mb-sm md:mb-md">
+              <span class="material-symbols-outlined text-on-surface text-[20px]">event</span>
+              <h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider text-[11px] md:text-label-md">Fin de Semana</h4>
+            </div>
+            <span class="font-display-lg text-[36px] md:text-[48px] font-bold text-on-surface block">6.50€</span>
+            <span class="font-body-md text-on-surface-variant text-sm block mb-xs md:mb-sm">/jugador</span>
+            <p class="font-body-md text-on-surface-variant text-xs md:text-sm">Sáb, Dom y Festivos</p>
+          </div>
+          <button class="relative z-10 mt-sm md:mt-md w-full bg-transparent border border-on-surface text-on-surface font-label-md text-label-md py-sm rounded-full hover:bg-on-surface hover:text-surface transition-colors uppercase text-xs md:text-label-md">
+            Ver Detalles
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WPT Section -->
+  <section class="py-12 md:py-xl bg-[#000000] border-b border-outline-variant relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="max-w-[1200px] mx-auto px-4 md:px-margin relative z-10 flex flex-col items-center text-center gap-md md:gap-lg">
+      <div class="flex items-center gap-gutter opacity-80 mb-sm md:mb-md flex-wrap justify-center">
+        <span class="font-display-lg text-headline-md text-on-surface uppercase tracking-tighter">7Pádel</span>
+        <span class="text-on-surface-variant">X</span>
+        <span class="font-display-lg text-headline-md text-on-surface uppercase tracking-tighter italic">World Padel Tour</span>
+      </div>
+      <h2 class="font-display-lg text-headline-lg md:text-display-lg text-on-surface max-w-3xl">Sede Oficial World Padel Tour</h2>
+      <p class="font-body-md text-body-md md:text-body-lg md:font-body-lg text-on-surface-variant max-w-2xl">Entrena y compite en las mismas pistas donde se forjan los campeones. Nuestro club cumple con los más altos estándares exigidos por el circuito profesional.</p>
+      <a href="instalaciones.html" class="mt-sm inline-block bg-secondary text-on-secondary font-label-md text-label-md px-lg py-sm md:py-md rounded-full hover:bg-secondary-fixed transition-colors uppercase">
+        Descubre las Pistas
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact / Lead Form Section -->
+  <section id="reservar" class="py-12 md:py-xl max-w-[1200px] mx-auto px-4 md:px-margin">
+    <div class="bg-surface-container-low border border-outline-variant p-6 md:p-lg lg:p-xl grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-xl items-center relative overflow-hidden">
+      <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-primary-container rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+      <div class="relative z-10">
+        <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-md">¿Primera vez?<br/><span class="text-secondary">Prueba gratis.</span></h2>
+        <p class="font-body-md text-body-md md:text-body-lg md:font-body-lg text-on-surface-variant mb-lg">Déjanos tus datos y te invitamos a tu primera partida de nivelación o clase de prueba en nuestra academia.</p>
+        <div class="flex items-center gap-sm mt-lg text-on-surface-variant">
+          <span class="material-symbols-outlined text-secondary">location_on</span>
+          <span class="font-body-md text-sm md:text-body-md">Polígono Industrial Vara de Quart, Valencia</span>
+        </div>
+      </div>
+      <div class="relative z-10 bg-surface border border-outline-variant p-6 md:p-lg shadow-lg shadow-surface-container-lowest">
+        <form class="flex flex-col gap-md">
+          <div class="flex flex-col gap-xs">
+            <label class="font-label-md text-label-md text-on-surface uppercase" for="name">Nombre Completo</label>
+            <input class="bg-surface-bright border-b border-outline-variant focus:border-secondary focus:ring-0 text-on-surface font-body-md p-sm transition-colors rounded-t" id="name" placeholder="Tu nombre" type="text"/>
+          </div>
+          <div class="flex flex-col gap-xs">
+            <label class="font-label-md text-label-md text-on-surface uppercase" for="phone">Teléfono</label>
+            <input class="bg-surface-bright border-b border-outline-variant focus:border-secondary focus:ring-0 text-on-surface font-body-md p-sm transition-colors rounded-t" id="phone" placeholder="600 00 00 00" type="tel"/>
+          </div>
+          <div class="flex flex-col gap-xs">
+            <label class="font-label-md text-label-md text-on-surface uppercase" for="interest">Me interesa</label>
+            <select class="bg-surface-bright border-b border-outline-variant focus:border-secondary focus:ring-0 text-on-surface font-body-md p-sm transition-colors rounded-t appearance-none" id="interest">
+              <option>Jugar un partido (Nivelación)</option>
+              <option>Clase de prueba (Escuela)</option>
+              <option>Información general</option>
+            </select>
+          </div>
+          <button class="mt-sm bg-secondary text-on-secondary font-label-md text-label-md py-md rounded-full hover:bg-secondary-fixed transition-colors uppercase w-full" type="submit">
+            Solicitar Prueba
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
+
 <!-- Footer -->
 <footer class="w-full py-lg bg-surface-container-lowest border-t border-outline-variant">
-<div class="max-w-[1200px] mx-auto px-margin grid grid-cols-1 md:grid-cols-4 gap-gutter">
-<!-- Brand Column -->
-<div class="flex flex-col gap-sm">
-<div class="flex items-center gap-xs mb-sm">
-<span class="material-symbols-outlined text-secondary text-[24px]" style="font-variation-settings: 'FILL' 1;">sports_tennis</span>
-<span class="font-display-lg text-headline-md text-on-surface uppercase tracking-tighter">7Pádel</span>
-</div>
-<p class="font-body-sm text-sm text-on-surface-variant">El club de pádel indoor de referencia en Valencia. Diseño de alto rendimiento, competición y estilo.</p>
-</div>
-<!-- Links Column -->
-<div class="flex flex-col gap-sm">
-<h4 class="font-label-md text-label-md text-on-surface uppercase mb-xs">Explorar</h4>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="instalaciones.html">Instalaciones</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="#tarifas">Tarifas</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="ligas-torneos.html">Torneos</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="academia.html">Escuela</a>
-</div>
-<!-- Legal Column (From JSON) -->
-<div class="flex flex-col gap-sm">
-<h4 class="font-label-md text-label-md text-on-surface uppercase mb-xs">Legal</h4>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="#">Contacto</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="#">Aviso Legal</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="#">Privacidad</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="#">Cookies</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="#">Sponsors</a>
-</div>
-<!-- Social/Contact Column -->
-<div class="flex flex-col gap-sm">
-<h4 class="font-label-md text-label-md text-on-surface uppercase mb-xs">Conecta</h4>
-<div class="flex gap-sm mb-sm">
-<a class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors text-on-surface" href="#">
-<span class="material-symbols-outlined">camera_alt</span> <!-- Placeholder for IG -->
-</a>
-<a class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors text-on-surface" href="#">
-<span class="material-symbols-outlined">share</span> <!-- Placeholder for FB/X -->
-</a>
-</div>
-<span class="font-body-sm text-sm text-on-surface-variant mt-auto border-t border-outline-variant pt-sm inline-block">© 2024 7Pádel Valencia. All rights reserved.</span>
-</div>
-</div>
+  <div class="max-w-[1200px] mx-auto px-4 md:px-margin grid grid-cols-2 md:grid-cols-4 gap-gutter">
+    <div class="col-span-2 md:col-span-1 flex flex-col gap-sm mb-2 md:mb-0">
+      <div class="flex items-center gap-xs mb-sm">
+        <span class="material-symbols-outlined text-secondary text-[24px]" style="font-variation-settings: 'FILL' 1;">sports_tennis</span>
+        <span class="font-display-lg text-headline-md text-on-surface uppercase tracking-tighter">7Pádel</span>
+      </div>
+      <p class="font-body-md text-sm text-on-surface-variant">El club de pádel indoor de referencia en Valencia.</p>
+    </div>
+    <div class="flex flex-col gap-sm">
+      <h4 class="font-label-md text-label-md text-on-surface uppercase mb-xs">Explorar</h4>
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="instalaciones.html">Instalaciones</a>
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="#tarifas">Tarifas</a>
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="ligas-torneos.html">Torneos</a>
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="academia.html">Escuela</a>
+    </div>
+    <div class="flex flex-col gap-sm">
+      <h4 class="font-label-md text-label-md text-on-surface uppercase mb-xs">Legal</h4>
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="#">Contacto</a>
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="#">Aviso Legal</a>
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="#">Privacidad</a>
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 w-fit" href="#">Cookies</a>
+    </div>
+    <div class="flex flex-col gap-sm">
+      <h4 class="font-label-md text-label-md text-on-surface uppercase mb-xs">Conecta</h4>
+      <div class="flex gap-sm mb-sm">
+        <a class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors text-on-surface" href="#">
+          <span class="material-symbols-outlined">camera_alt</span>
+        </a>
+        <a class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors text-on-surface" href="#">
+          <span class="material-symbols-outlined">share</span>
+        </a>
+      </div>
+      <span class="font-body-md text-sm text-on-surface-variant border-t border-outline-variant pt-sm inline-block">© 2024 7Pádel Valencia.</span>
+    </div>
+  </div>
 </footer>
-<!-- Floating Action Button (WhatsApp) -->
-<button class="fixed bottom-lg right-lg w-14 h-14 bg-secondary text-on-secondary rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition-transform z-50">
-<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">chat</span>
-</button>
+
+<!-- WhatsApp FAB -->
+<a href="#reservar" class="fixed bottom-lg right-4 md:right-lg w-14 h-14 bg-secondary text-on-secondary rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition-transform z-50">
+  <span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+
+<script>
+  const t = document.getElementById('menu-toggle');
+  const m = document.getElementById('mobile-menu');
+  const i = document.getElementById('menu-icon');
+  t.addEventListener('click', () => {
+    if (m.classList.contains('hidden')) {
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+      i.textContent = 'close';
+    } else {
+      m.classList.remove('flex');
+      m.classList.add('hidden');
+      i.textContent = 'menu';
+    }
+  });
+</script>
 </body></html>
